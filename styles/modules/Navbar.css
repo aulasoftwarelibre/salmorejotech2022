@@ -68,7 +68,7 @@ ul.Navbar-zone li {
   margin-left: var(--margin-horizontal);
 
   display: inline-block;
-  padding: 0.5em;
+  padding: 1em 0.5em;
 }
 .Navbar .nav-isologo img {
   width: 10em;
