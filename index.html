@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
   <title>Salmorejo 2022</title>
 
   <!-- Imports -->
@@ -15,20 +15,29 @@
 </head>
 <body>
   <!-- Navbar -->
-  <section id="Navbar" class="Navbar">
-    <li id="Nav-Isologo" class="nav-isologo nodisplay">
-      <a id="nav-Hero"><img src="./images/sprites/isologo-blanco.png" /></a>
+  <ul class="Navbar-zone">
+    <li id="Navbar-toggle-btn" class="Navbar-toggle-btn">
+      <a>
+        <span id="Navbar-toggle-span" class="material-icons-round">reorder</span>
+      </a>
     </li>
-    <ul>
-      <li id="nav-About" ><a>Sobre nosotros</a></li>
-      <li id="nav-Speakers" ><a>Ponentes</a></li>
-      <li id="nav-Schedule" ><a>Horario</a></li>
-      <li id="nav-Place" ><a>Lugar</a></li>
-      <li id="nav-Sponsors" ><a>Patrocinadores</a></li>
-      <li id="nav-PreviousEvents" ><a>Previos Eventos</a></li>
-      <li id="nav-Tickets"><a>Entradas</a></li>
-    </ul>
-  </section>
+    <li>
+      <section id="Navbar" class="Navbar">
+        <li id="Nav-Isologo" class="nav-isologo nodisplay">
+          <a id="nav-Hero"><img src="./images/sprites/isologo-blanco.png" /></a>
+        </li>
+        <ul>
+          <li id="nav-About"><a>Sobre nosotros</a></li>
+          <li id="nav-Speakers"><a>Ponentes</a></li>
+          <li id="nav-Schedule"><a>Horario</a></li>
+          <li id="nav-Sponsors"><a>Patrocinadores</a></li>
+          <li id="nav-Place"><a>Lugar</a></li>
+          <li id="nav-PreviousEvents"><a>Previos Eventos</a></li>
+          <li id="nav-Tickets"><a>Entradas</a></li>
+        </ul>
+      </section>
+    </li>
+  </ul>
   
   <!-- Hero -->
   <section id="Hero" class="Hero-section"> 
@@ -118,13 +127,13 @@
   <section id="Schedule" class="Section">
     <h1>Schedule</h1>
   </section>
-  <!-- Place -->
-  <section id="Place" class="Section">
-    <h1>Place</h1>
-  </section>
   <!-- Sponsors -->
   <section id="Sponsors" class="Section">
     <h1>Sponsors</h1>
+  </section>
+  <!-- Place -->
+  <section id="Place" class="Section">
+    <h1>Place</h1>
   </section>
   <!-- PreviousEvents -->
   <section id="PreviousEvents" class="Section">

@@ -1,3 +1,27 @@
+ul.Navbar-zone {
+  margin: 0 !important;
+  padding: 0;
+
+  list-style: none;
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+  z-index: 10;
+}
+
+ul.Navbar-zone li {
+  margin: 0 !important;
+}
+
+.Navbar,
+.Navbar-toggle-btn {
+  --margin-top: 10px;
+  --margin-horizontal: 30px;
+}
 .Navbar {
   position: fixed;
   width: 100vw;
@@ -5,9 +29,6 @@
   color: var(--basic-color);
   z-index: 3;
   transition: all 200ms ease-in-out;
-
-  --margin-top: 10px;
-  --margin-horizontal: 30px;
 }
 
 .Navbar ul {
@@ -24,8 +45,10 @@
   justify-content: center;
 }
 
-.scrolled {
-  background: rgba(0, 0, 0, 0.4);
+.scrolled,
+.Navbar-toggle-btn {
+  display: block;
+  background: var(--much-darker-color);
 }
 
 .Navbar li {
@@ -55,4 +78,60 @@
   padding: 10px;
   background-color: var(--primary-color);
   color: black;
+}
+
+.collapse {
+  display: none !important;
+}
+
+.collapse.shown {
+  display: block !important;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  margin: 0;
+  padding-top: 2em;
+  font-size: 1.3em;
+
+  background-color: var(--much-darker-color);
+}
+
+.collapse.shown li {
+  display: block;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.collapse.shown ul {
+  flex-direction: column;
+  float: none;
+}
+
+.Navbar.collapse .nav-isologo {
+  display: block;
+  padding: 0.5em;
+}
+
+.Navbar-toggle-btn {
+  display: none;
+  position: fixed;
+  color: var(--basic-color);
+  top: var(--margin-top);
+  right: var(--margin-horizontal);
+
+  padding: 0.4em 0.4em 0 0.4em;
+  border-radius: 10px;
+}
+
+.Navbar-toggle-btn :hover {
+  cursor: pointer;
+}
+.Navbar-toggle-btn span {
+  font-size: 2em;
+}
+
+.Navbar-toggle-btn.shown {
+  display: block;
 }

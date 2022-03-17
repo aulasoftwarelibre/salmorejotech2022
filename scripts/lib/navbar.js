@@ -1,20 +1,22 @@
 /**
  * Constants
  */
-const COLLAPSE_NAV_WIDTH = 900;
+const COLLAPSE_NAV_WIDTH = 1280;
 const SCROLLED_NAV_Y = 50;
 
 // Navbar section
 const navbar = document.getElementById("Navbar");
 // Navbar isologo
 const navIsologo = document.getElementById("Nav-Isologo");
-
+const NavbarToggleBtn = document.getElementById("Navbar-toggle-btn");
+const NavbarToggleSpan = document.getElementById("Navbar-toggle-span");
 
 /**
  * Navbar background on scroll
  */
 
 function HandleScrollNavbar() {
+
   let posY = window.scrollY;
 
   if (posY >= SCROLLED_NAV_Y) {
@@ -78,7 +80,7 @@ function smoothScroll(target) {
 
   var targetSection = document.getElementById(target);
   var pos = targetSection.offsetTop;
-  if (pos !== 0) {
+  if (pos !== 0 && !navbar.classList.contains('collapse')) {
     pos -= navbar.clientHeight
   }
 
@@ -112,7 +114,55 @@ navLinks.map((navLink) => {
 
 
 /**
- * On load
+ * Collapse navbar
  */
 
+function collapseNavBar() {
+  const window_width = window.innerWidth
+  if (window_width < COLLAPSE_NAV_WIDTH) {
+    navbar.classList.add('collapse')
+    navbar.classList.remove('shown');
+    NavbarToggleBtn.classList.add('shown');
+    return;
+  }
+  navbar.classList.remove('collapse');
+  NavbarToggleBtn.classList.remove('shown');
+}
+
+window.addEventListener('resize', () => collapseNavBar());
+
+function toggleNavbar() {
+
+  if (!navbar.classList.contains('collapse')) return;
+  if (navbar.classList.contains('shown')) {
+    navbar.classList.remove('shown');
+    NavbarToggleBtn.classList.add('shown');
+    return;
+  }
+  navbar.classList.add('shown');
+  NavbarToggleBtn.classList.remove('shown');
+}
+
+NavbarToggleBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  toggleNavbar();
+})
+
+
+window.addEventListener('click', (event) => {
+  event.preventDefault();
+  
+  if (
+    event.target == NavbarToggleBtn ||
+    event.target == NavbarToggleSpan ||
+    !navbar.classList.contains('collapse') ||
+    !navbar.classList.contains('shown')
+  ) return;
+
+  toggleNavbar();
+})
+/**
+ * On load
+ */
+collapseNavBar()
 HandleScrollNavbar()

@@ -7,6 +7,7 @@
 :root {
   --basic-color: #eee;
   --darker-color: rgba(0, 0, 0, 0.2);
+  --much-darker-color: rgba(0, 0, 0, 0.8);
   --primary-color: #c74;
 }
 
