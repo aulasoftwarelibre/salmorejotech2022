@@ -1,0 +1,81 @@
+.Hero-section {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+
+  background-image: url("../../images/sections-background/cordoba.jpg");
+  color: white;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Hero-Text-Block {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.Hero-Text-Block h2,
+.Hero-Text-Block h3 {
+  margin: 0;
+}
+.Hero-Text-Block span {
+  color: red;
+  font-weight: bold;
+}
+
+.Hero-Isologo {
+  width: 45vmax;
+  padding: 1em;
+}
+
+.Hero-bottom {
+  position: relative;
+  bottom: 20px;
+}
+
+.Hero-bottom .material-icons-round {
+  font-size: 50px;
+  transition: all 200ms ease-in;
+}
+
+.Hero-bottom .material-icons-round:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 1200px) {
+  .Hero-Text-Block h2 {
+    font-size: 2em;
+  }
+  .Hero-Text-Block h3 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Hero-Text-Block h2 {
+    font-size: 1.7em;
+  }
+  .Hero-Text-Block h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Hero-Text-Block h2 {
+    font-size: 1.1em;
+  }
+  .Hero-Text-Block h3 {
+    font-size: 0.8em;
+  }
+}

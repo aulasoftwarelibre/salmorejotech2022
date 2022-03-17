@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "./modules/Navbar.css";
+@import "./modules/Hero.css";
+@import "./modules/Sections.css";
+
+:root {
+  --basic-color: #eee;
+  --darker-color: rgba(0, 0, 0, 0.2);
+  --primary-color: #c74;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--basic-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+p,
+span,
+button,
+a,
+li {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+
+.nodisplay {
+  display: none !important;
+}
+.material-icons-round {
+  font-weight: 900;
+}
+.text-green {
+  color: greenyellow;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.text-left {
+  text-align: left !important;
+}

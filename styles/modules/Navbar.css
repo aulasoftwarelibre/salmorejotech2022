@@ -1,0 +1,58 @@
+.Navbar {
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  color: var(--basic-color);
+  z-index: 3;
+  transition: all 200ms ease-in-out;
+
+  --margin-top: 10px;
+  --margin-horizontal: 30px;
+}
+
+.Navbar ul {
+  list-style: none;
+  float: right;
+
+  margin-top: var(--margin-top);
+  margin-right: var(--margin-horizontal);
+
+  display: flex;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.scrolled {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.Navbar li {
+  margin: 0;
+  display: inline-block;
+  padding: 1em 1.5em;
+  transition: all 200ms ease-in-out;
+}
+.Navbar li:hover {
+  cursor: pointer;
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+.Navbar .nav-isologo {
+  margin-top: var(--margin-top);
+  margin-left: var(--margin-horizontal);
+
+  display: inline-block;
+  padding: 0.5em;
+}
+.Navbar .nav-isologo img {
+  width: 10em;
+}
+
+.Navbar #nav-Tickets a {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: black;
+}
