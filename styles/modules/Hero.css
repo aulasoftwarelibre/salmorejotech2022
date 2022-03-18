@@ -13,6 +13,9 @@
   align-content: center;
   justify-content: center;
   overflow: hidden;
+
+  position: relative;
+  z-index: 1;
 }
 
 .Hero-Text-Block {

@@ -1,60 +1,68 @@
 /* Especifico de About*/
 
-#About {
-  background-image: url("../../images/sections-background/white-background.jpg");
+.About {
+  background-image: url("../../images/sections-background/salmorejotech-fondo.svg");
+  background-size: cover;
   padding: 5vh 0;
+  color: white;
+  box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
+  -webkit-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
+  -moz-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
+
+  position: relative;
+  z-index: 1;
 }
 
-#About h1 {
+.About h1 {
   text-align: center;
   margin: 0 2em;
 }
-#About h1,
-#About h2,
-#About h3,
-#About h4 {
+.About h1,
+.About h2,
+.About h3,
+.About h4 {
   padding: 1em;
 }
-#About p {
+.About p {
   text-align: center;
   max-width: 60vw;
   margin: 0 auto;
 }
 
-#About .about-List {
+.About .about-List {
   margin: 20px auto;
   padding: 2em;
   background-color: var(--darker-color);
   border-radius: 2em;
 }
-#About .about-List ul {
+.About .about-List ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#About img {
+.About img {
   width: 200px;
 }
 
 @media screen and (max-width: 1200px) {
-  #About p {
+  .About p {
     text-align: center !important;
     margin-bottom: 20px;
   }
-  #About .row {
+  .About .row {
     flex-direction: column-reverse;
   }
 
-  #About h1 {
+  .About h1 {
     font-size: 2em;
   }
 }
 @media screen and (max-width: 900px) {
-  #About h1 {
+  .About h1 {
     font-size: 1.5em;
   }
-  #About h4 {
+  .About h4 {
     font-size: 1.1em;
   }
 }
