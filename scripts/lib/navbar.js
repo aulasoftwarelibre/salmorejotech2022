@@ -70,7 +70,7 @@ const navLinks = [
   },
   {
     doc: document.getElementById('goDownIcon'),
-    goTo: 'Data'
+    goTo: 'About'
   }
 ];
 
