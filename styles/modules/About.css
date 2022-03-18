@@ -5,9 +5,6 @@
   background-size: cover;
   padding: 5vh 0;
   color: white;
-  box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
-  -webkit-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
-  -moz-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
 
   position: relative;
   z-index: 1;

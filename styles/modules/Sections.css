@@ -1,5 +1,6 @@
 @import "./Data.css";
 @import "./About.css";
+@import "./Speakers.css";
 
 .centered {
   align-items: center;
@@ -19,6 +20,12 @@
   max-width: 100%;
   max-width: 100%;
   min-height: 200px;
+
+  box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
+  -webkit-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
+  -moz-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
+
+  padding: 10em 0;
 }
 
 .col {
