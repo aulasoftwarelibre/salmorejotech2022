@@ -85,3 +85,25 @@ h4 {
     0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
+
+.setoff-text.black {
+  color: black;
+  text-shadow: 0 1px 0 #666, 0 2px 0 #696969, 0 3px 0 #777, 0 4px 0 #797979,
+    0 5px 0 #888, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fa {
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease-out 200ms;
+}
+
+.fa:hover {
+  transform: scale(1.15);
+}
