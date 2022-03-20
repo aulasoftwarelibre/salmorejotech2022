@@ -1,6 +1,7 @@
 @import "./Data.css";
 @import "./About.css";
 @import "./Speakers.css";
+@import "./Sponsors.css";
 
 .centered {
   align-items: center;
@@ -26,6 +27,19 @@
   -moz-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
 
   padding: 10em 0;
+
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.Section.white {
+  background-image: url("../../images/sections-background/white-background.jpg");
+}
+
+.Section.orange {
+  background-image: url("../../images/sections-background/salmorejotech-fondo.svg");
+  color: white;
 }
 
 .col {

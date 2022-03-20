@@ -1,13 +1,6 @@
 .Speakers {
-  min-height: 50vh !important;
   display: flex;
   flex-direction: column;
-
-  background-image: url("../../images/sections-background/white-background.jpg");
-  background-size: cover;
-  background-position: center;
-
-  text-align: center;
 }
 
 .Speakers .grid {

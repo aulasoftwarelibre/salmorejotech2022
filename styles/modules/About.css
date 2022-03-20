@@ -1,10 +1,7 @@
 /* Especifico de About*/
 
 .About {
-  background-image: url("../../images/sections-background/salmorejotech-fondo.svg");
-  background-size: cover;
   padding: 5vh 0;
-  color: white;
 
   position: relative;
   z-index: 1;
