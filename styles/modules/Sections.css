@@ -2,6 +2,7 @@
 @import "./About.css";
 @import "./Speakers.css";
 @import "./Sponsors.css";
+@import "./Tickets.css";
 
 .centered {
   align-items: center;
