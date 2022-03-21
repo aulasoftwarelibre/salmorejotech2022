@@ -150,8 +150,6 @@ NavbarToggleBtn.addEventListener('click', (event) => {
 
 
 window.addEventListener('click', (event) => {
-  event.preventDefault();
-  
   if (
     event.target == NavbarToggleBtn ||
     event.target == NavbarToggleSpan ||
@@ -159,6 +157,7 @@ window.addEventListener('click', (event) => {
     !navbar.classList.contains('shown')
   ) return;
 
+  event.preventDefault();
   toggleNavbar();
 })
 /**
