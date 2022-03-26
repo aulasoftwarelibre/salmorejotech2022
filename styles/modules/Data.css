@@ -34,7 +34,11 @@
   text-shadow: 1px 4px 9px rgba(255, 0, 0, 0.4);
 }
 
-@media screen and (max-width: 900px) {
+.Data .data.text {
+  font-size: 23px;
+}
+
+@media screen and (max-width: 1200px) {
   .dataBackground,
   .Data {
     height: 600px;

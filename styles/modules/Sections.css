@@ -71,11 +71,11 @@
     width: 60vw;
     max-width: 100%;
   }
-}
-@media screen and (max-width: 900px) {
   .thin-Section {
     flex-direction: column;
   }
+}
+@media screen and (max-width: 900px) {
   .col {
     margin: 20px;
     width: 100vw;
