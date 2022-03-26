@@ -3,6 +3,7 @@
 @import "./Speakers.css";
 @import "./Sponsors.css";
 @import "./Tickets.css";
+@import "./Footer.css";
 
 .centered {
   align-items: center;

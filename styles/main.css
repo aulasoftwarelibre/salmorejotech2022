@@ -107,3 +107,7 @@ h4 {
 .fa:hover {
   transform: scale(1.15);
 }
+
+.flip {
+  rotate: 180deg;
+}

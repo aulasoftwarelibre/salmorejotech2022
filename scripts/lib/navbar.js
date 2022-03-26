@@ -61,10 +61,6 @@ const navLinks = [
     goTo: 'Sponsors'
   },
   {
-    doc: document.getElementById('nav-PreviousEvents'),
-    goTo: 'PreviousEvents'
-  },
-  {
     doc: document.getElementById('nav-Tickets'),
     goTo: 'Tickets'
   },
