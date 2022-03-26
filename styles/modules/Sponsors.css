@@ -8,7 +8,6 @@
   display: grid;
   margin: auto;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-gap: calc(var(--size) / 6) calc(var(--size) / 2);
 
   justify-content: center;
@@ -36,4 +35,22 @@
 
 .grid .sponsor:hover {
   transform: scale(1.1) translateY(-15px);
+}
+
+@media screen and (max-width: 1450px) {
+  .Sponsors .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .Sponsors .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Sponsors .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
 }
