@@ -1,0 +1,180 @@
+.Place .gallery {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 100px;
+}
+.gallery .sub-section {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.bigPhoto {
+  height: 700px;
+  margin: 40px;
+  border-radius: 20px;
+}
+.photo {
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.bigPhoto,
+.photo {
+  width: 800px;
+  transition: all 250ms ease-in-out;
+}
+.bigPhoto:hover,
+.photo:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 8px 14px -6px #000000;
+  box-shadow: 0px 8px 14px -6px #000000;
+}
+
+.conference {
+  background-image: url("../../images/place/conferencia.png");
+  background-size: cover;
+}
+
+.checkIn {
+  background-image: url("../../images/place/checkin.png");
+  background-size: cover;
+}
+.networking {
+  background-image: url("../../images/place/networking.png");
+  background-size: cover;
+}
+
+.Place h2 {
+  font-size: 2em;
+}
+.Place h3 {
+  font-size: 1.2em;
+}
+.Place iframe {
+  width: 1000px;
+  height: 600px;
+  border: 0;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1850px) {
+  .bigPhoto {
+    width: 750px;
+    height: 600px;
+  }
+  .photo {
+    width: 750px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  .bigPhoto {
+    width: 700px;
+    height: 570px;
+  }
+  .photo {
+    width: 700px;
+    height: 330px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .bigPhoto {
+    width: 600px;
+    height: 500px;
+  }
+  .photo {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .bigPhoto {
+    width: 550px;
+    height: 470px;
+  }
+  .photo {
+    width: 550px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .Place .gallery {
+    flex-direction: column;
+  }
+  .bigPhoto {
+    width: 750px;
+    height: 600px;
+  }
+  .photo {
+    width: 750px;
+    height: 350px;
+  }
+
+  .Place iframe {
+    width: 700px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Place h2 {
+    font-size: unset;
+  }
+  .Place h3 {
+    font-size: unset;
+  }
+  .bigPhoto {
+    width: 600px;
+    height: 500px;
+  }
+  .photo {
+    width: 600px;
+    height: 300px;
+  }
+  .Place iframe {
+    width: 650px;
+    height: 480px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .bigPhoto,
+  .Place iframe {
+    width: 500px;
+    height: 440px;
+  }
+  .photo {
+    width: 500px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .bigPhoto,
+  .Place iframe {
+    width: 450px;
+    height: 400px;
+  }
+  .photo {
+    width: 450px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bigPhoto,
+  .Place iframe {
+    width: 350px;
+    height: 300px;
+  }
+  .photo {
+    width: 350px;
+    height: 180px;
+  }
+}

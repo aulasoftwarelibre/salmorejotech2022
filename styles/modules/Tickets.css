@@ -1,5 +1,12 @@
-.Tickets {
+.Tickets .row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
+
 .contactBtn {
   font-size: 1.5rem;
   font-weight: 600;
@@ -13,7 +20,13 @@
   transition: all 250ms ease-in;
 }
 .contactBtn:hover {
-  font-size: 1.8rem;
+  transform: scale(1.25);
   -webkit-box-shadow: 0px 8px 14px -6px #000000;
   box-shadow: 0px 8px 14px -6px #000000;
+}
+
+@media (max-width: 900px) {
+  .contactBtn {
+    font-size: 1rem;
+  }
 }

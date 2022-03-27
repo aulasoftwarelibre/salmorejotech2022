@@ -3,6 +3,7 @@
 @import "./Speakers.css";
 @import "./Sponsors.css";
 @import "./Tickets.css";
+@import "./Place.css";
 @import "./Footer.css";
 
 .centered {
@@ -28,7 +29,7 @@
   -webkit-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
   -moz-box-shadow: -1px -1px 23px 8px rgba(0, 0, 0, 0.67) inset;
 
-  padding: 10em 0;
+  padding: 100px 0;
 
   background-position: center;
   background-size: cover;

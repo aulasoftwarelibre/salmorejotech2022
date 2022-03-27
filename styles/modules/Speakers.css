@@ -33,9 +33,6 @@
   -moz-box-shadow: -1px 6px 16px 1px rgba(0, 0, 0, 0.68);
 }
 
-.speakerCard .empty {
-  content: "xd";
-}
 .speakerCard .Photo {
   width: var(--width);
   height: calc(var(--height) / 1.5);
@@ -49,7 +46,7 @@
 }
 
 .speakerCard img:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   filter: brightness(1.05);
 }
 

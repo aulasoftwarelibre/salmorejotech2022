@@ -69,6 +69,10 @@
   transform: scale(1.1);
 }
 
+.second-row {
+  margin: 20px;
+}
+
 @media screen and (max-width: 1400px) {
   .Footer .main-row {
     grid-template-columns: repeat(1, 90vw);
