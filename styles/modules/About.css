@@ -37,7 +37,9 @@
 }
 .About .about-List ul {
   list-style: none;
+  text-align: left;
   padding: 0;
+  padding-top: 20px;
   margin: 0;
 }
 
