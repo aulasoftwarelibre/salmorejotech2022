@@ -82,6 +82,12 @@
     width: 100vw;
     max-width: 100%;
   }
+  .colM {
+    width: 90%;
+  }
+  .colS {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 650px) {

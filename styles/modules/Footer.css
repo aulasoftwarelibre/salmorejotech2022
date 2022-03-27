@@ -9,11 +9,13 @@
   padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
-
+.Footer h3 {
+  font-size: 20px;
+}
 .Footer .main-row {
   display: grid;
   margin: auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 40vw);
   grid-gap: calc(var(--size) / 6) calc(var(--size) / 2);
 
   justify-content: center;
@@ -25,7 +27,7 @@
 
 .main-row .RRSS {
   display: block;
-  width: 50vw;
+  width: 100%;
 }
 .main-row .RRSS img {
   width: 250px;
@@ -44,7 +46,7 @@
 .main-row .contactInfo {
   display: flex;
   flex: 1;
-  width: 50vw;
+  width: 100%;
   flex-direction: column;
 
   align-items: center;
@@ -65,4 +67,31 @@
 
 .main-row .contactInfo h3:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1400px) {
+  .Footer .main-row {
+    grid-template-columns: repeat(1, 90vw);
+  }
+  .main-row .RRSS {
+    margin-bottom: 50px;
+  }
+  .main-row .contactInfo {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Footer .main-row {
+    width: 80vw;
+  }
+  .Footer .main-row h1 {
+    font-size: 25px;
+  }
+  .main-row .contactInfo .fa {
+    font-size: 13px !important;
+    float: inline-start;
+  }
+  .Footer .main-row h3 {
+    font-size: 15px;
+  }
 }

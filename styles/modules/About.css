@@ -15,7 +15,7 @@
 .About h2,
 .About h3,
 .About h4 {
-  padding: 1em;
+  margin: 1em;
 }
 .About p {
   text-align: center;
@@ -55,17 +55,21 @@
   .About .row {
     flex-direction: column-reverse;
   }
-
-  .About h1 {
-    font-size: 2em;
-  }
 }
 @media screen and (max-width: 900px) {
-  .About h1 {
-    font-size: 1.5em;
+  .About p {
+    max-width: max-content;
+    margin: 0 20px;
   }
-  .About h4 {
-    font-size: 1.1em;
+  .About .about-List {
+    --side-margin: 10px;
+    width: calc(80vw - calc(var(--side-margin) * 2));
+  }
+  .About .about-List h2 {
+    font-size: 1.4em;
+  }
+  #About-cont .colM {
+    margin-bottom: 20px;
   }
 }
 

@@ -10,6 +10,7 @@
   --darker-color: rgba(0, 0, 0, 0.2);
   --much-darker-color: rgba(0, 0, 0, 0.8);
   --primary-color: #ffbd33;
+  color-scheme: normal;
 }
 
 html,
@@ -24,6 +25,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: var(--basic-color);
+  font-size: 20px;
 }
 
 h1,
@@ -44,16 +46,16 @@ li {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 1.8em;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 1.6em;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.4em;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .nodisplay {
@@ -95,7 +97,6 @@ h4 {
     0 3px 5px rgba(150, 150, 150, 0.2), 0 5px 10px rgba(150, 150, 150, 0.25),
     0 10px 10px rgba(150, 150, 150, 0.2), 0 20px 20px rgba(150, 150, 150, 0.15);
 }
-
 .fa {
   color: white;
   padding: 5px;
@@ -111,4 +112,9 @@ h4 {
 
 .flip {
   rotate: 180deg;
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 20px;
+  }
 }

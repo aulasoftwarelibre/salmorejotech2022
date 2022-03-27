@@ -26,6 +26,9 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  text-align: center;
+
+  width: 80vw;
 }
 
 .Hero-Text-Block h2,
@@ -106,5 +109,10 @@
   }
   .Hero-Text-Block h3 {
     font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Hero-Isologo {
+    width: 80vw;
   }
 }

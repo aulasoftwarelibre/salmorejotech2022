@@ -8,7 +8,6 @@
   margin: auto;
   margin-top: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   grid-gap: 2.5em;
 
   justify-content: center;
@@ -34,6 +33,9 @@
   -moz-box-shadow: -1px 6px 16px 1px rgba(0, 0, 0, 0.68);
 }
 
+.speakerCard .empty {
+  content: "xd";
+}
 .speakerCard .Photo {
   width: var(--width);
   height: calc(var(--height) / 1.5);
@@ -68,13 +70,11 @@
 @media screen and (max-width: 1400px) {
   .Speakers .grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
   }
 }
 @media screen and (max-width: 900px) {
   .Speakers .grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(11, 1fr);
   }
 }
 
