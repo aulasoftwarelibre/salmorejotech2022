@@ -50,11 +50,37 @@
 .Hero-bottom .material-icons-round {
   font-size: 50px;
   transition: all 200ms ease-in;
+  animation: PointHand 2.5s infinite;
 }
 
 .Hero-bottom .material-icons-round:hover {
   cursor: pointer;
   transform: scale(1.5);
+}
+
+@keyframes PointHand {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0) rotate(-20deg);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-0.5em) rotate(20deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(-0.5em) rotate(20deg);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(0) rotate(-20deg);
+  }
+}
+@-webkit-keyframes PointHand {
+  0% {
+  }
+  100% {
+  }
 }
 
 @media screen and (max-width: 1200px) {

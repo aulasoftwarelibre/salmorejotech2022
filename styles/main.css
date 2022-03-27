@@ -89,11 +89,11 @@ h4 {
 
 .setoff-text.black {
   color: black;
-  text-shadow: 0 1px 0 #666, 0 2px 0 #696969, 0 3px 0 #777, 0 4px 0 #797979,
-    0 5px 0 #888, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 0 #888, 0 2px 0 #8b8b8b, 0 3px 0 #999, 0 4px 0 #9b9b9b,
+    0 5px 0 #aaa, 0 6px 1px rgba(150, 150, 150, 0.1),
+    0 0 5px rgba(150, 150, 150, 0.1), 0 1px 3px rgba(150, 150, 150, 0.3),
+    0 3px 5px rgba(150, 150, 150, 0.2), 0 5px 10px rgba(150, 150, 150, 0.25),
+    0 10px 10px rgba(150, 150, 150, 0.2), 0 20px 20px rgba(150, 150, 150, 0.15);
 }
 
 .fa {
