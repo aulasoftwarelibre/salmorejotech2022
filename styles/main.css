@@ -3,6 +3,7 @@
 @import "./modules/Navbar.css";
 @import "./modules/Hero.css";
 @import "./modules/Sections.css";
+@import "./typingEffect.css";
 
 :root {
   --basic-color: #eee;
