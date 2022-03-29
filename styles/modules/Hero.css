@@ -4,6 +4,7 @@
   height: 100vh;
 
   background-image: url("../../images/sections-background/cordoba.jpg");
+  background-size: cover;
   color: white;
   display: flex;
   flex: 1;

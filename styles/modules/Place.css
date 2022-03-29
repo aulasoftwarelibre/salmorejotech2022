@@ -41,16 +41,16 @@
 }
 
 .conference {
-  background-image: url("../../images/place/conferencia.png");
+  background-image: url("../../images/place/conferencia.jpg");
   background-size: cover;
 }
 
 .checkIn {
-  background-image: url("../../images/place/checkin.png");
+  background-image: url("../../images/place/checkin.jpg");
   background-size: cover;
 }
 .networking {
-  background-image: url("../../images/place/networking.png");
+  background-image: url("../../images/place/networking.jpg");
   background-size: cover;
 }
 
