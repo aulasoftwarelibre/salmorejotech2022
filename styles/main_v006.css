@@ -689,7 +689,9 @@ ul.Navbar-zone li {
 .Data .label {
   margin: 0;
 }
-
+.Data .label {
+  color: white;
+}
 .Data .data {
   color: red;
   text-shadow: 1px 4px 9px rgba(255, 0, 0, 0.4);
