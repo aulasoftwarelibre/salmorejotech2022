@@ -734,8 +734,10 @@ ul.Navbar-zone li {
 }
 
 .Speakers .speakerCard {
+  position: relative;
   --height: 550px;
   --width: 412.5px;
+  --label-padding: 1em;
 
   height: var(--height);
   width: var(--width);
@@ -768,9 +770,15 @@ ul.Navbar-zone li {
 }
 
 .speakerCard .Label {
-  padding: 1em;
+  padding: var(--label-padding);
   color: white;
   font-size: 20px;
+}
+
+.speakerCard .RRSS {
+  position: absolute;
+  bottom: 5px;
+  width: calc(100% - calc(var(--label-padding) * 2));
 }
 
 .speakerCard .RRSS ul {
