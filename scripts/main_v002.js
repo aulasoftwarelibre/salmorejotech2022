@@ -225,3 +225,6 @@ setTimeout(() => {
   loadingScreen.style.transform = 'translateX(-100vw)';
   document.body.style.overflowY = 'unset';
 }, LOADING_TIME);
+setTimeout(() => {
+  loadingScreen.style.display = 'none';
+}, LOADING_TIME * 2);

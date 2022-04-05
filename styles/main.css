@@ -67,6 +67,13 @@ h4 {
 .text-green {
   color: greenyellow;
 }
+.orange-tick {
+  color: var(--primary-color);
+  text-shadow: #444 2px 1px 1px;
+}
+.margin-top-3em {
+  margin-top: 3em;
+}
 
 .glass-card {
   background: rgba(255, 255, 255, 0.35);
@@ -660,7 +667,7 @@ ul.Navbar-zone li {
 /** Data section */
 
 .dataBackground {
-  background-image: url("../../images/sections-background/statistic.jpg");
+  background-image: url("../images/sections-background/statistic_butBlurred.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.67);
@@ -668,8 +675,7 @@ ul.Navbar-zone li {
   z-index: 0;
   width: 100%;
 
-  filter: blur(9px) brightness(0.4) contrast(0.8);
-  transform: scale(1.1);
+  filter: brightness(0.6) contrast(0.9);
 }
 .Data {
   color: black;
@@ -879,6 +885,9 @@ ul.Navbar-zone li {
   align-items: center;
   align-content: center;
   margin: 100px;
+
+  position: relative;
+  z-index: 4;
 }
 .gallery .sub-section {
   width: 40vw;
@@ -894,6 +903,7 @@ ul.Navbar-zone li {
   height: 700px;
   margin: 40px;
   border-radius: 20px;
+  border: 0;
 }
 .photo {
   height: 400px;
@@ -906,7 +916,6 @@ ul.Navbar-zone li {
   width: 800px;
   transition: all 250ms ease-in-out;
 }
-.bigPhoto:hover,
 .photo:hover {
   transform: scale(1.05);
   -webkit-box-shadow: 0px 8px 14px -6px #000000;
@@ -933,13 +942,10 @@ ul.Navbar-zone li {
 .Place h3 {
   font-size: 1.2em;
 }
-.Place iframe {
-  width: 1000px;
-  height: 600px;
-  border: 0;
+
+.Place .direction {
   margin: 20px;
 }
-
 @media screen and (max-width: 1850px) {
   .bigPhoto {
     width: 750px;
@@ -984,6 +990,10 @@ ul.Navbar-zone li {
   .Place .gallery {
     flex-direction: column;
   }
+  .gallery .sub-section {
+    width: 90vw;
+  }
+
   .bigPhoto {
     width: 750px;
     height: 600px;
@@ -993,17 +1003,13 @@ ul.Navbar-zone li {
     height: 350px;
   }
 
-  .Place iframe {
-    width: 700px;
-    height: 500px;
-  }
 }
 @media screen and (max-width: 900px) {
   .Place h2 {
-    font-size: unset;
+    font-size: 1.8rem;
   }
   .Place h3 {
-    font-size: unset;
+    font-size: 1.2rem;
   }
   .bigPhoto {
     width: 600px;
@@ -1013,14 +1019,9 @@ ul.Navbar-zone li {
     width: 600px;
     height: 300px;
   }
-  .Place iframe {
-    width: 650px;
-    height: 480px;
-  }
 }
 @media screen and (max-width: 750px) {
-  .bigPhoto,
-  .Place iframe {
+  .bigPhoto {
     width: 500px;
     height: 440px;
   }
@@ -1030,8 +1031,7 @@ ul.Navbar-zone li {
   }
 }
 @media screen and (max-width: 650px) {
-  .bigPhoto,
-  .Place iframe {
+  .bigPhoto {
     width: 450px;
     height: 400px;
   }
@@ -1041,8 +1041,7 @@ ul.Navbar-zone li {
   }
 }
 @media screen and (max-width: 500px) {
-  .bigPhoto,
-  .Place iframe {
+  .bigPhoto {
     width: 350px;
     height: 300px;
   }
@@ -1062,6 +1061,42 @@ ul.Navbar-zone li {
   justify-content: center;
 }
 
+.Tickets .TicketCard {
+  margin: 20px;
+  padding: 2em;
+  text-align: start;
+  border-radius: 5em;
+}
+.TicketCard h3 {
+  text-align: center;
+}
+
+.Tickets .TicketCard ul{
+  margin-top: 1.5em;
+  list-style: none;
+}
+.TicketCard ul li {
+  margin-bottom: 1.5em;
+}
+
+a.ticketBtn{
+  padding: .6em 1.3em;
+  background-image: url('../images/sections-background/salmorejotech-fondo.svg');
+  background-size: cover;
+  border-radius: 1em;
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: 600;
+  color: white;
+  transition: all 250ms ease-in;
+}
+a.ticketBtn:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+  -webkit-box-shadow: 0px 8px 14px -6px #000000;
+  box-shadow: 0px 8px 14px -6px #000000;
+}
 .contactBtn {
   font-size: 1.5rem;
   font-weight: 600;
@@ -1082,6 +1117,9 @@ ul.Navbar-zone li {
 
 @media (max-width: 900px) {
   .contactBtn {
+    font-size: 1rem;
+  }
+  a.ticketBtn {
     font-size: 1rem;
   }
 }

@@ -57,8 +57,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
   <script src="https://kit.fontawesome.com/00d5b47be3.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="/styles/main_v007.min.css">
-  <script type="module" src="/scripts/main.js"></script>  
+  <link rel="stylesheet" href="/styles/main_v008.min.css">
+  <script type="module" src="/scripts/main_v002.js"></script>  
 
 </head>
 <body>
@@ -81,10 +81,10 @@
         </li>
         <ul>
           <li id="nav-About"><a>Introducción</a></li>
+          <li id="nav-Place"><a>Lugar</a></li>
           <li id="nav-Speakers"><a>Ponentes</a></li>
           <li id="nav-Schedule"><a>Horario</a></li>
           <li id="nav-Sponsors"><a>Patrocinadores</a></li>
-          <li id="nav-Place"><a>Lugar</a></li>
           <li id="nav-Tickets"><a>Entradas</a></li>
         </ul>
       </section>
@@ -98,7 +98,10 @@
       <h2>Tu evento tecnológico con sabor <span>cordobés</span></h2>
       <h2>Más <span id="typingText" class="typing"></span></h2>
       <h3>13 DE <span>MAYO</span> DE 2022</h3>
+      <a href="https://www.eventbrite.es/e/entradas-salmorejotech-2022-314465543907" target="_blank" rel="noopener noreferrer"
+        class="ticketBtn margin-top-3em">Consigue tu entrada ahora mismo!</a>
     </div>
+
     <div class="Hero-bottom">
       <span class="material-icons-round" id="goDownIcon">
         swipe_down
@@ -113,45 +116,6 @@
       El congreso tecnológico más grande de Córdoba. Un día repleto de charlas, software y networking donde compartir y hacer
       comunidad con profesionales, estudiantes y empresarios de córdoba
     </p>
-    <div class="about-List colM centered glass-card">
-      <h2>¿Qué ofrecemos?</h2>
-      <p>
-        Otro año más vuelve el SalmorejoTech, donde Córdoba se convierte en la capital del software en España por un día. Como
-        todos los años, ponemos el foco en la calidad de nuestras <span>ponencias</span>, en hacer un congreso <span>inclusivo
-          y paritario</span>, en
-        el <span>Networking</span> y en Córdoba. Qué mejor ocasión que en Mayo, en pleno festival de los <span>Patios de
-          Córdoba!!</span>
-      </p>
-    </br>
-
-      <ul>
-        <li>
-          <span class="material-icons-round text-green">
-            check
-          </span>
-          Ponentes profesionales de calidad del sector.
-        </li>
-        <li>
-          <span class="material-icons-round text-green">
-            check
-          </span>
-          Establecer lazos entre la comunidad informatica.
-        </li>
-        <li>
-          <span class="material-icons-round text-green">
-            check
-          </span>
-          Conocer a distintas empresas afines al sector.
-        </li>
-        <li>
-          <span class="material-icons-round text-green">
-            check
-          </span>
-          Poder compartir en un clima de confianza las experiencias personales sobre la tecnologia.
-        </li>
-
-      </ul>
-    </div>
   </section>
 
   <!-- Data -->
@@ -171,22 +135,28 @@
       <h2 class="label">Incluidos</h2>
     </div>
   </section>
-  <!-- About-Cont -->
-  <section id="About-cont" class="About Section orange centered">
-    <h1 class="">Aula de Software Libre</h1>
-    <div class="row centered">
-      <div class="colS centered">
-        <img src="./images/footer/logo-aula-blanco.png" alt="logo del aula de software libre" />    
+  <!-- Place -->
+  <section id="Place" class="Section orange Place">
+    <h1 class="">Lugar</h1>
+    <div class="gallery">
+      <div class="sub-section">
+        <h2>SALÓN DE ACTOS RECTORADO</h2>
+        <div class="direction">
+          <h3>AV. DE MEDINA AZAHARA, 5</h3>
+          <h3>CÓRDOBA 14005, ESPAÑA</h3>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.746837936473!2d-4.784313584698631!3d37.883699277360684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf60e271dc79%3A0xde994cae3981bc29!2sUniversity%20of%20Cordoba!5e0!3m2!1sen!2ses!4v1648419407963!5m2!1sen!2ses"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="bigPhoto"></iframe>
       </div>
-      <div class="colM centered">
-        <p>
-          Desde el Aula de Software Libre, organizamos numerosos eventos a lo largo de todo el año. Nuestro principal objetivo es
-          enseñar y acercar a personas de todo tipo la importancia del software libre. ¡Te esperamos!
-        </p>
+      <div class="sub-section">
+        <div class="photo conference"></div>
+        <div class="photo networking"></div>
       </div>
     </div>
+
   </section>
-  
   <!-- Speakers -->
   <section id="Speakers" class="Section Speakers white">
     <h1 class="black">Ponentes</h1>
@@ -270,36 +240,57 @@
       </div>
     </div>
   </section>
-  <!-- Place -->
-  <section id="Place" class="Section orange Place">
-    <h1 class="">Lugar</h1>
-    <div class="gallery">
-      <div class="sub-section">
-        <h2>SALÓN DE ACTOS RECTORADO</h2>
-        <div class="bigPhoto conference"></div>
+  <!-- About-Cont -->
+  <section id="About-cont" class="About Section orange centered">
+    <h1 class="">Aula de Software Libre</h1>
+    <div class="row centered">
+      <div class="colS centered">
+        <img src="./images/footer/logo-aula-blanco.png" alt="logo del aula de software libre" />
       </div>
-      <div class="sub-section">
-        <div class="photo checkIn"></div>
-        <h2>NETWORKING DE CALIDAD</h2>
-        <div class="photo networking"></div>
+      <div class="colM centered">
+        <p>
+          Desde el Aula de Software Libre, organizamos numerosos eventos a lo largo de todo el año. Nuestro principal
+          objetivo es
+          enseñar y acercar a personas de todo tipo la importancia del software libre. ¡Te esperamos!
+        </p>
       </div>
-    </div>
-    <div class="direction">
-      <h2>Dirección</h2>
-      <h3>AV. DE MEDINA AZAHARA, 5</h3>
-      <h3>CÓRDOBA 14005, ESPAÑA</h3>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.746837936473!2d-4.784313584698631!3d37.883699277360684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf60e271dc79%3A0xde994cae3981bc29!2sUniversity%20of%20Cordoba!5e0!3m2!1sen!2ses!4v1648419407963!5m2!1sen!2ses"
-        allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
   <!-- Tickets -->
   <section id="Tickets" class="Section Tickets white">
-    <h1 class="black">Entradas</h1>
-    <h4>Próximamente...</h4>
+    <h1 class="black">Consigue tu entrada!</h1>
     <div class="row centered">
-      <a href="http://eepurl.com/guAgTT" target="_blank" rel="noreferrer noopener" class="contactBtn">Mantenme al día</a>
+      <div class="colM TicketCard glass-card centered">
+        <h3>¿Que incluye?</h3>
+        <ul>
+          <li>
+            <span class="material-icons-round orange-tick">
+              check
+            </span>
+            Acceso a las charlas organizadas en el evento.
+          </li>
+          <li>
+            <span class="material-icons-round orange-tick">
+              check
+            </span>
+            Desayuno, comida y picoteo durante el networking.
+          </li>
+          <li>
+            <span class="material-icons-round orange-tick">
+              check
+            </span>
+            Networking de calidad donde poder compartir en un clima de confianza las experiencias personales sobre la
+            tecnologia.
+          </li>
+          <li>
+            <span class="material-icons-round orange-tick">
+              check
+            </span>
+            Y muchas más sorpresas!
+          </li>
+        </ul>
+        <a href="https://www.eventbrite.es/e/entradas-salmorejotech-2022-314465543907" target="_blank" rel="noopener noreferrer" class="ticketBtn">Consigue tu entrada ahora mismo!</a>
+      </div>
     </div>
   </section>
   <!-- Footer -->
