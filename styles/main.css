@@ -988,7 +988,10 @@ ul.Navbar-zone li {
 }
 @media screen and (max-width: 1350px) {
   .Place .gallery {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .Place .gallery h2 {
+    margin: 1.2em;
   }
   .gallery .sub-section {
     width: 90vw;
