@@ -1226,33 +1226,32 @@ a.ticketBtn:hover {
 }
 
 /** Schedule */
-.Schedule .program {
-  display: flex;
-  flex-direction: column;
+.Schedule {
+  padding-bottom: 0 !important;
+}
+.Schedule h1{
+  transform: scale(4) translateY(40px);
+}
+.Schedule img {
   width: 100%;
-}
-
-.program .StandbyTime {
-
-}
-.program .UniqueTalk {
-
-}
-.program .MultipleTracks {
-
-}
-.program .MultipleTracks .Track {
-
-}
-.Track .Talk {
-
-}
-
-.program .Card {
-
-}
-.program .Card .Time {
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
   
 }
+@media screen and (max-width: 1400px) {
+  .Schedule h1 {
+    transform: scale(2) translateY(30px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .Schedule h1 {
+    transform: scale(1) translateY(20px);
+  }
+}
 
-.program .Card .Label { }
+@media screen and (max-width: 600px) {
+  .Schedule h1 {
+    transform: scale(1) translateY(0px);
+  }
+}
